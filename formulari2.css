@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Raleway:wght@100&display=swap');
+
+* {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background-image: url('fondo_amarillo_alberto.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#formulari {
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  gap: 270px;
+  justify-content: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#mensaje {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  gap: 10px;
+}
+
+h1 {
+  color: #4CC9F0;
+}
+
+h2 {
+  width: 700px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.resaltado {
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  width: 105px;
+  white-space: nowrap;
+}
+
+
+
+.inclinado input,
+.inclinado textarea {
+  transform: skewX(-15deg);
+  transform-origin: 0;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+}
+
+
+.inclinado input {
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  border-left: 3px solid #000;
+}
+
+
+.inclinado textarea {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+.inclinado textarea {
+  height: 100px;
+  resize: none;
+}
+
+input::placeholder {
+  color: black;
+}
+
+textarea::placeholder {
+  color: #000;
+}
+
+.boton {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid black;
+  transform: skewX(-15deg);
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+  transform: skewX(0deg);
+}
+
+.boton:hover {
+  background: #7209B7;
+  color: white;
+}
+
+
+#info-contacte {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+}
+
+.info i {
+  font-size: 2.2rem;
+  margin-right: 10px;
+  color: black;
+  transition: color 0.4s;
+}
+
+.info p {
+  font-size: 1.2rem;
+  color: black;
+  transition: color 0.4s;
+}
+
+.info:hover {
+  color: #7209B7;
+}
+
+.info:hover i {
+  color: #7209B7;
+}
+
+.info:hover p {
+  color: #7209B7;
+}
+
+@media (max-width: 1400px) {
+  #formulari {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1000px;
+    gap: 50px;
+  }
+
+  .info {
+    white-space: nowrap;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+
+  #info-contacte {
+    border-top: 3px solid #000;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 60px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  #formulari
+  {
+    height: 1200px;
+  }
+  #info-contacte {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 40px;
+    padding-top: 50px;
+  }
+
+}
